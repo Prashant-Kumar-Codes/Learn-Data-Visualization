@@ -1,0 +1,147 @@
+============================================================
+                MAIN MODULES OF MATPLOTLIB
+============================================================
+
+1. matplotlib.pyplot
+   Work:
+     - Provides a MATLAB-like interface for creating plots easily.
+     - Used for quick plotting such as line, bar, scatter, histogram, etc.
+     - Acts as a STATE-BASED interface (automatically manages
+       figures and axes).
+
+------------------------------------------------------------
+
+2. matplotlib.figure
+   Work:
+     - Responsible for the Figure object.
+     - Figure represents the ENTIRE plotting area
+       (window or image).
+     - Controls figure size, DPI, background color,
+       and overall layout.
+
+------------------------------------------------------------
+
+3. matplotlib.axes
+   Work:
+     - Handles the Axes object.
+     - Axes is the ACTUAL plotting region where
+       data is drawn.
+     - Controls x-axis, y-axis, plots, labels,
+       and titles.
+
+------------------------------------------------------------
+
+4. matplotlib.axis
+   Work:
+     - Manages individual Axis objects
+       (X-axis and Y-axis).
+     - Controls ticks, tick labels, limits,
+       and scale (linear, log).
+
+------------------------------------------------------------
+
+5. matplotlib.colors
+   Work:
+     - Handles color processing and conversions.
+     - Used for colormaps, normalization,
+       RGB and HEX colors.
+
+------------------------------------------------------------
+
+6. matplotlib.cm
+   Work:
+     - Manages colormaps.
+     - Provides predefined colormaps such as:
+       viridis, plasma, coolwarm.
+
+------------------------------------------------------------
+
+7. matplotlib.ticker
+   Work:
+     - Controls tick formatting and placement.
+     - Used to customize tick intervals
+       and tick label formats.
+
+------------------------------------------------------------
+
+8. matplotlib.legend
+   Work:
+     - Manages legend creation and layout.
+     - Controls legend position, labels,
+       and styling.
+
+------------------------------------------------------------
+
+9. matplotlib.text
+   Work:
+     - Handles all text elements.
+     - Used for titles, axis labels,
+       annotations, and text placement.
+
+------------------------------------------------------------
+
+10. matplotlib.style
+    Work:
+      - Applies predefined styles to plots.
+      - Example:
+          plt.style.use("ggplot")
+
+
+
+
+Furthur explaination for pyplot MODULE:
+============================================================
+                matplotlib.pyplot (IMPORTANT)
+============================================================
+
+What is pyplot?
+  - pyplot is a HIGH-LEVEL, STATE-BASED interface
+    of Matplotlib.
+  - It is used to create plots quickly and easily.
+
+pyplot automatically:
+  - Creates figures
+  - Adds axes
+  - Plots data
+
+This makes pyplot ideal for beginners and
+quick visualization tasks.
+
+------------------------------------------------------------
+
+Why is pyplot called "state-based"?
+  - It keeps track of:
+      1) Current figure
+      2) Current axes
+  - Therefore, manual object creation
+    is not required.
+
+------------------------------------------------------------
+
+Commonly used pyplot functions:
+
+  plt.plot()      → Line plot
+  plt.scatter()   → Scatter plot
+  plt.bar()       → Bar chart
+  plt.hist()      → Histogram
+  plt.pie()       → Pie chart
+  plt.xlabel()    → X-axis label
+  plt.ylabel()    → Y-axis label
+  plt.title()     → Plot title
+  plt.legend()    → Show legend
+  plt.grid()      → Show grid
+  plt.show()      → Display plot
+
+------------------------------------------------------------
+
+When to use pyplot:
+  - Learning Matplotlib
+  - Quick plots and analysis
+  - Small scripts and notebooks
+
+When to avoid pyplot:
+  - Large and complex applications
+  - Advanced layout control
+    (prefer Object-Oriented API)
+
+============================================================
